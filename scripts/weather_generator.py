@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 def get_markov_rainfall(prev_rainfall, p_01, p_10, thres=1., multiplier=20.):
     """
@@ -73,7 +73,7 @@ print(f"Writing weather data to {fn}")
 df.to_csv(fn)
 
 print(f"Plotting weather data in {jpg_out}")
-f = plt.figure(figsize=(16, 9))
-ax = plt.subplot(111)
-df.plot(ax=ax)
-f.savefig(jpg_out, bbox_inches="tight", dpi=200)
+# f = plt.figure(figsize=(16, 9))
+# ax = plt.subplot(111)
+# df.plot(ax=ax)
+# f.savefig(jpg_out, bbox_inches="tight", dpi=200)
